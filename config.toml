@@ -1,0 +1,40 @@
+baseurl = ""
+languageCode = "en-us"
+title = "MovieLakay - Haiti Movie Database"
+# theme = "hugo-steam-theme"
+disqusShortname = "movielakay"
+# Enable Google Analytics be inserting your tracking code
+googleAnalytics = ""
+# Number of posts per page
+paginate = 10
+
+[params]
+	title = "MovieLakay"
+	subtitle = "The premiere Haitian movie database"
+	copyright = "a SawPanse company."
+
+	# Link custom assets relative to /static
+	favicon   = "favicon.ico"
+	customCSS = []
+	customJS  = []
+
+	name = "Kenold Beauplan"
+	bio = "programmer - blogger - coffee aficionado"
+	description = "Your description of the blog"
+
+	# Link your social networks (optional)
+	location = ""
+	twitter = ""
+	linkedin = ""
+	googleplus = ""
+	facebook = ""
+	instagram = ""
+	github = ""
+	gitlab = ""
+	bitbucket = ""
+
+	# Customize or translate the strings
+	keepReadingStr = "Keep reading"
+	backtotopStr = "Back to top"
+	shareStr = "Share"
+	pageNotFoundTitle = "404 - Page not found"
