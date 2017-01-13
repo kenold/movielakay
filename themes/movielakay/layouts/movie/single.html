@@ -1,10 +1,13 @@
 {{ partial "header.html" }}
     <h3>{{ .Title }}</h3>
     <p>{{ .Content }}</p>
-    <p>Cast:
-        {{ range $index, $cast := .Params.cast }}
-            {{ if gt $index 0 }}, {{ end }}
-            <a href="{{ "/person/" | relURL }}{{ . | urlize }}">{{ . }}</a>
-        {{ end }}
-    </p>
+
+    {{ if .Params.casts }}
+        <p>Cast:
+            {{ range $index, $cast := .Params.cast }}
+                {{ if gt $index 0 }}, {{ end }}
+                <a href="{{ "/person/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+        </p>
+    {{ end }}
 {{ partial "footer.html" }}
