@@ -1,8 +1,15 @@
 {{ partial "header.html" }}
-<h4>Most Recent Actors</h4>
+<h3>Most Recent Actors</h3>
 <ul>
     {{ range (where .Data.Pages "Section" "person") }}
         {{ partial "components/person-list-item.html" . }}
+    {{ end }}
+</ul>
+
+<h3>Popular Movies</h3>
+<ul>
+    {{ range (where .Data.Pages "Section" "movie") }}
+        {{ partial "components/movie-list-item.html" . }}
     {{ end }}
 </ul>
 {{ partial "footer.html" }}
