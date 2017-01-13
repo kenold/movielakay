@@ -1,3 +1,8 @@
 {{ partial "header.html" }}
-    {{ .Render "summary" }}
+<h4>Most Recent Actors</h4>
+<ul>
+    {{ range (where .Data.Pages "Section" "person") }}
+        {{ partial "components/person-list-item.html" . }}
+    {{ end }}
+</ul>
 {{ partial "footer.html" }}
