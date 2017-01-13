@@ -22,7 +22,13 @@
             <h1>Movie Lakay</h1>
         </div>
 
-        
+        <ul>
+            {{ range (where .Data.Pages "Section" "person") }}
+                <li><a href="{{ .Permalink}}">{{ .Params.Name }}</a></li>
+            {{ end }}
+        </ul>
+
+
     </div>
 
     <footer class="footer">
