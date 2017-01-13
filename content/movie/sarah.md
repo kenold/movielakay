@@ -1,5 +1,5 @@
 ---
-name: "Sarah"
+title: "Sarah"
 casts: [ "Blondedy Ferdinand", "Tony Delerme", "Gessica Geneus" ]
 ---
 <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ratione rem voluptate ea animi. Architecto pariatur doloribus possimus cupiditate exercitationem aperiam nam et ad sunt, facilis qui, vero blanditiis suscipit.</div>
