@@ -2,7 +2,7 @@
 id: assassin
 title: "Assassin"
 cast: [ "Handy Tibert", "Blondedy Ferdinand", "Fabienne Colas" ]
-director: "Samuel Vincent"
+director: "Tutu Demosthene"
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ratione rem voluptate ea animi. Architecto pariatur doloribus possimus cupiditate exercitationem aperiam nam et ad sunt, facilis qui, vero blanditiis suscipit.
 
