@@ -5,9 +5,11 @@
     {{ if .Params.cast }}
         <p>Cast:
             {{ range $index, $cast := .Params.cast }}
+
                 {{ if gt $index 0 }},{{ end }}
                 <a href="{{ "/person/" | relURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
         </p>
     {{ end }}
+    <p>Director: {{ .Params.director }}</p>
 {{ partial "footer.html" }}
