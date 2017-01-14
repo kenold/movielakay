@@ -1,7 +1,7 @@
 {{ partial "header.html" }}
 <h3>Most Recent Actors</h3>
 <ul  class="list-unstyled">
-    {{ range (where .Data.Pages "Section" "person") }}
+    {{ range sort (where .Data.Pages "Section" "person") "Params.name" }}
         {{ partial "components/person-list-item.html" . }}
     {{ end }}
 </ul>
