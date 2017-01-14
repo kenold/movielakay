@@ -1,14 +1,14 @@
 {{ partial "header.html" }}
 <h3>Most Recent Actors</h3>
 <ul>
-    {{ range (where .Data.Pages "Section" "person") }}
+    {{ range sort .Data.Pages "Params.name" (where .Data.Pages "Section" "person") }}
         {{ partial "components/person-list-item.html" . }}
     {{ end }}
 </ul>
 
 <h3>Popular Movies</h3>
 <ul>
-    {{ range (where .Data.Pages "Section" "movie") }}
+    {{ range (where .Data.Pages "Section" "movie").ByTitle }}
         {{ partial "components/movie-list-item.html" . }}
     {{ end }}
 </ul>
