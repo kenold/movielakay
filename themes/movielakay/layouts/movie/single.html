@@ -5,7 +5,15 @@
     <p>Cast:
         <ul>
             {{ range sort .Params.cast "position" "asc" }}
-                <li>{{ .name }} - {{ .role }}</li>
+                <li><a href="{{"/person/" | relURL}}{{ .name | urlize }}">{{ .name }}</a> - {{ .role }}</li>
+            {{ end }}
+        </ul>
+    </p>
+
+    <p>Crew:
+        <ul>
+            {{ range sort .Params.crew "position" "asc" }}
+                <li><a href="{{"/person/" | relURL}}{{ .name | urlize }}">{{ .name }}</a> - {{ .role }}</li>
             {{ end }}
         </ul>
     </p>
