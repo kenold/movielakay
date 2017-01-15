@@ -13,5 +13,16 @@
 {{ end }}
 
 <p>Filmography:</p>
+<!-- <ul>
+{{ $page_link := .Permalink }}
+{{ $tags := .Params.cast.name }}
+{{ range .Data.Pages "Section" "movie" }}
+    {{ $page := . }}
+    {{ $has_common_tags := intersect $tags .Params.cast.name | len | lt 0 }}
+    {{ if and $has_common_tags (ne $page_link $page.Permalink) }}
+        <li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+    {{ end }}
+{{ end }}
+</ul> -->
 
 {{ partial "footer.html" }}
