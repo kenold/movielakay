@@ -3,4 +3,14 @@
 <h3>{{ .Params.name }}{{ with .Params.image }} <small>({{.}}) {{ end }}</small></h3>
 <p>{{ .Content }}</p>
 
+{{ if .Params.knownFor }}
+    <p>Known For:
+        <ul>
+            {{ range .Params.knownFor }}
+                <li><a href="{{"/movie/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+            {{ end }}            
+        </ul>
+    </p>
+{{ end }}
+
 {{ partial "footer.html" }}
