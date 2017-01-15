@@ -4,13 +4,14 @@
 <p>{{ .Content }}</p>
 
 {{ if .Params.knownFor }}
-    <p>Known For:
-        <ul>
-            {{ range .Params.knownFor }}
-                <li><a href="{{"/movie/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
-            {{ end }}            
-        </ul>
-    </p>
+    <p>Known For:</p>
+    <ul>
+        {{ range .Params.knownFor }}
+            <li><a href="{{"/movie/" | relURL }}{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+    </ul>
 {{ end }}
+
+<p>Filmography:</p>
 
 {{ partial "footer.html" }}

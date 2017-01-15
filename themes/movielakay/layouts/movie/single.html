@@ -3,22 +3,21 @@
 <p>{{ .Content }}</p>
 
 {{ if .Params.cast }}
-    <p>Cast:
-        <ul>
-            {{ range sort .Params.cast "position" "asc" }}
-                <li><a href="{{"/person/" | relURL}}{{ .name | urlize }}">{{ .name }}</a> - {{ .role }}</li>
-            {{ end }}
-        </ul>
-    </p>
+    <p>Cast:</p>
+    <ul>
+        {{ range sort .Params.cast "position" "asc" }}
+            <li><a href="{{"/person/" | relURL}}{{ .name | urlize }}">{{ .name }}</a> - {{ .role }}</li>
+        {{ end }}
+    </ul>
+
 {{ end }}
 
 {{ if .Params.crew }}
-    <p>Crew:
-        <ul>
-            {{ range sort .Params.crew "position" "asc" }}
-                <li><a href="{{"/person/" | relURL}}{{ .name | urlize }}">{{ .name }}</a> - {{ .role }}</li>
-            {{ end }}
-        </ul>
-    </p>
+    <p>Crew:</p>
+    <ul>
+        {{ range sort .Params.crew "position" "asc" }}
+            <li><a href="{{"/person/" | relURL}}{{ .name | urlize }}">{{ .name }}</a> - {{ .role }}</li>
+        {{ end }}
+    </ul>
 {{ end }}
 {{ partial "footer.html" }}
