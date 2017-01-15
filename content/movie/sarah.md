@@ -1,9 +1,16 @@
----
-id: sarah
-title: "Sarah"
-cast: [ "Blondedy Ferdinand", "Tony Delerme", "Gessica Geneus" ]
-director: "Samuel Vincent"
----
++++
+id = "sarah"
+title = "Sarah"
+[[cast]]
+name = "Blondedy Ferdinand"
+role = "Jessica"
+position = 2
+[[cast]]
+name = "Tony Delerme"
+role = "Robert"
+position = 1
+director = "Samuel Vincent"
++++
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ratione rem voluptate ea animi. Architecto pariatur doloribus possimus cupiditate exercitationem aperiam nam et ad sunt, facilis qui, vero blanditiis suscipit.
 
 Eligendi, eveniet quam qui nesciunt unde. Accusantium, expedita saepe earum dolore impedit nostrum modi nihil veniam, aliquid repudiandae officiis excepturi beatae cum in blanditiis necessitatibus aliquam inventore, facilis hic porro.

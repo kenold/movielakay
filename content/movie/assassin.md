@@ -1,9 +1,8 @@
----
-id: assassin
-title: "Assassin"
-cast: [ "Handy Tibert", "Blondedy Ferdinand", "Fabienne Colas" ]
-director: "Tutu Demosthene"
----
++++
+id = "assassin"
+title = "Assassin"
+director =  "Tutu Demosthene"
++++
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ratione rem voluptate ea animi. Architecto pariatur doloribus possimus cupiditate exercitationem aperiam nam et ad sunt, facilis qui, vero blanditiis suscipit.
 
 Eligendi, eveniet quam qui nesciunt unde. Accusantium, expedita saepe earum dolore impedit nostrum modi nihil veniam, aliquid repudiandae officiis excepturi beatae cum in blanditiis necessitatibus aliquam inventore, facilis hic porro.
