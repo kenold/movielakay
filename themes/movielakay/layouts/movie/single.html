@@ -1,7 +1,8 @@
 {{ partial "header.html" }}
-    <h3>{{ .Title }}</h3>
-    <p>{{ .Content }}</p>
+<h3>{{ .Title }}</h3>
+<p>{{ .Content }}</p>
 
+{{ if .Params.cast }}
     <p>Cast:
         <ul>
             {{ range sort .Params.cast "position" "asc" }}
@@ -9,7 +10,9 @@
             {{ end }}
         </ul>
     </p>
+{{ end }}
 
+{{ if .Params.crew }}
     <p>Crew:
         <ul>
             {{ range sort .Params.crew "position" "asc" }}
@@ -17,4 +20,5 @@
             {{ end }}
         </ul>
     </p>
+{{ end }}
 {{ partial "footer.html" }}
