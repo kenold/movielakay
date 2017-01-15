@@ -2,14 +2,11 @@
     <h3>{{ .Title }}</h3>
     <p>{{ .Content }}</p>
 
-    {{ if .Params.cast }}
-        <p>Cast:
-            {{ range $index, $cast := .Params.cast }}
-
-                {{ if gt $index 0 }},{{ end }}
-                <a href="{{ "/person/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+    <p>Cast:
+        <ul>
+            {{ range sort .Params.cast "position" "asc" }}
+                <li>{{ .name }} - {{ .role }}</li>
             {{ end }}
-        </p>
-    {{ end }}
-    <p>Director: {{ .Params.director }}</p>
+        </ul>
+    </p>
 {{ partial "footer.html" }}
