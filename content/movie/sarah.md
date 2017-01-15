@@ -9,7 +9,14 @@ position = 2
 name = "Tony Delerme"
 role = "Robert"
 position = 1
-director = "Samuel Vincent"
+[[crew]]
+name = "Tutu Demosthene"
+role = "Director"
+position = 1
+[[crew]]
+name = "Kenold Beauplan"
+role = "Producer"
+position = 2
 +++
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ratione rem voluptate ea animi. Architecto pariatur doloribus possimus cupiditate exercitationem aperiam nam et ad sunt, facilis qui, vero blanditiis suscipit.
 
